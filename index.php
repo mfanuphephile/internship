@@ -13,5 +13,6 @@
 </head>
 <body>
      <a href="register.php">Register Author</a>
+     <a href="authors.php">Get Authors</a>
 </body>
 </html>
