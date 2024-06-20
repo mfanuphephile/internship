@@ -12,6 +12,6 @@
 	<title></title>
 </head>
 <body>
-     <a href="register.php">Authors</a>
+     <a href="register.php">Register Author</a>
 </body>
 </html>
