@@ -8,17 +8,28 @@
 </head>
 <body> 
 
-	<form action="endpoint.php" method="POST">
-		
-	 <label>Name</label>
-	 <input type="text" name="name">
+	<?php 
+		if(isset($_GET['msg'])){?>
+			<p style="color:<?=($_GET['response'] ? "blue" : "red")?>" ><?=$_GET['msg']?></p>
+			<?php if($_GET['response']){?>
+				<a href="index.php">Done</a>
+			<?php }else{?>
+				<a href="register.php">Retry</a>
+			<?php }
+			}else{?>
 
-	  <label>Email</label>
-	 <input type="text" name="email">
+		<form action="endpoint.php" method="POST">
+			
+		 <label>Name</label>
+		 <input type="text" name="name">
 
-	 <button type="submit" name="register">SUBMIT</button>
+		  <label>Email</label>
+		 <input type="text" name="email">
 
-	</form>
+		 <button type="submit" name="register">SUBMIT</button>
+
+		</form>
+	<?php }?>
 
 </body>
 </html>
