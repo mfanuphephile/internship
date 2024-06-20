@@ -2,7 +2,7 @@
 class Database{
 
 	private static function connect(){
-		$severname = "192.168.100.31";
+		$severname = "localhost";
 		$username = "root";
 		$password = "";
 		$dbname = "internship";
