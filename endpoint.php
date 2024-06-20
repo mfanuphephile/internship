@@ -10,7 +10,7 @@ if(isset($_POST['register'])){
 
 
 	$autthor_data = array(
-		"author-name" => htmlspecialchars($name), "author-email" =>htmlspecialchars($email)
+		"author_name" => htmlspecialchars($name), "author_email" =>htmlspecialchars($email)
 	);
 
 	$res = $main->addAuthor($autthor_data);
