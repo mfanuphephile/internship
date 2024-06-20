@@ -12,8 +12,8 @@ if(isset($_POST['register'])){
 	$autthor_data = array(
 		"author_name" => htmlspecialchars($name), "author_email" =>htmlspecialchars($email)
 	);
-
+	var_dump($autthor_data);
 	$res = $main->addAuthor($autthor_data);
 
-	echo $res['msg'];
+	var_dump($res['msg']);
 }

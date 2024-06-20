@@ -11,7 +11,9 @@ class Main Extends Database{
 		return $authors_response;
 	}
 	public function addAuthor($data){
-		$reg_request = "INSERT INTO users (name, email) VALUES($data['author-name'], $data['author-email'])";
+		$name = $data['author_name'];
+		$email = $data['author_email'];
+		$reg_request = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
 
 		$reg_res = $this->query($reg_request);
 

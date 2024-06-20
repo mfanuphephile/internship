@@ -16,7 +16,7 @@
 	  <label>Email</label>
 	 <input type="text" name="email">
 
-	 <button type="register">SUBMIT</button>
+	 <button type="submit" name="register">SUBMIT</button>
 
 	</form>
 
