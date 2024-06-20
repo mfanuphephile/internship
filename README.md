@@ -1,2 +1,2 @@
 # internship
-authors: Innocentia Dutoit
+authors: Innocentia Dutoit, Mfanuphephile Mnisi
